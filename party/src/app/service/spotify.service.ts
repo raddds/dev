@@ -5,6 +5,15 @@ import { HttpClient, HttpParams } from '@angular/common/http';
   providedIn: 'root',
 })
 export class SpotifyService {
-  constructor(private http: HttpClient) {}
+  private accessToken: string;
 
+  constructor(private http: HttpClient) {}
+  
+  saveAccessToken(accessToken: string) {
+    this.accessToken = accessToken;
+  }
+
+  getAccessToken() {
+    return this.accessToken;
+  }
 }
