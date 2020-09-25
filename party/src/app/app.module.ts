@@ -11,9 +11,10 @@ import { SpotifyService } from './service/spotify.service';
 import { HttpClientModule } from '@angular/common/http';
 import { RoomComponent } from './room/room.component';
 import { LoggingInComponent } from './logging-in/logging-in.component';
+import { PlayerComponent } from './room/player/player.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, LoginCardComponent, RoomComponent, LoggingInComponent],
+  declarations: [AppComponent, LoginComponent, LoginCardComponent, RoomComponent, LoggingInComponent, PlayerComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
